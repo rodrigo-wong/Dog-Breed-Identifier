@@ -6,10 +6,10 @@ import os
 IMAGE_SIZE = (331, 331)
 IMAGE_FULL_SIZE = (331, 331, 3)
 
-trainingFolder = "F:/Projects/DogBreedData/dog-breed-identification/train"
+trainingFolder = "F:/Projects/DogBreedData/dog-breed-identification/train" # replace with your correct PATH to the training data from Kaggle
 
 # Read CSV file
-df = pd.read_csv("F:/Projects/DogBreedData/dog-breed-identification/labels.csv")
+df = pd.read_csv("F:/Projects/DogBreedData/dog-breed-identification/labels.csv") # replace with your correct PATH to the training data from Kaggle
 print("head of labels:")
 print("==============")
 print(df.head())
@@ -21,7 +21,7 @@ print(groupByLabels.head(10))
 
 # Display Image
 
-imagePath = "/Volumes/T7 Touch/Projects/DogBreedData/dog-breed-identification/train/0a001d75def0b4352ebde8d07c0850ae.jpg"
+imagePath = "/Volumes/T7 Touch/Projects/DogBreedData/dog-breed-identification/train/0a001d75def0b4352ebde8d07c0850ae.jpg" # Test image
 img = cv2.imread(imagePath)
 # cv2.imshow("img", img)
 # cv2.waitKey(0)
